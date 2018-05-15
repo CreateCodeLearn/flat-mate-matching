@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
       <link rel="stylesheet" href="css/flat_mate_style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <style>
-        div{margin: 20px;}
-      </style>
+      <style> div{margin: 20px;} </style>
 </head>
 
 <body>
@@ -16,56 +14,69 @@
     <h1>Flat Mate </h1>
   </header>
 
-    <!--first section -->
+    <!--FIRST section -->
     <div class="section container-left content-a">
       <h1> first part </i></h1>
-
         <h3>
           I am...
           <div id="mainselection">
-          <select>
-            <option>Please select a gender</option>
-            <option>Female</option>
-            <option>Male</option>
-            <option>Neutral</option>
+          <select name="Gender">
+            <option value="null">Please select a gender..</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="neutral">Neutral</option>
           </select>
-        </div>
+          </div>
 
-        My age...
-        <div id="mainselection">
-        <select>
-          <option>Please select age range</option>
-          <option>20-30</option>
-          <option>30-40</option>
-          <option>40-50</option>
-        </select>
-        </div>
-
-        I need...
-        <div id="mainselection">
-        <select>
-          <option>A place to live</option>
-          <option>A roomate to share my place</option>
+          My age...
+          <div id="mainselection">
+            <select name="Age">
+            <option value="0">Please select age range..</option>
+            <option value="1">20-30</option>
+            <option value="2">30-40</option>
+            <option value="3">40-50</option>
           </select>
-        </div>
+          </div>
 
-        In...
-        <div id="mainselection">
-        <select>
-          <option>Berlin</option>
-          <option>Potsdam</option>
-          <option>Brandenburg</option>
-          </select>
-        </div>
+          I am looking for...
+          <div id="mainselection">
+          <select name="Category">
+            <option value="Nachmieter">A place to live</option>
+            <option value="Vermieter">A roomate to share my place</option>
+            </select>
+          </div>
 
-      </h3><br>
+          In...
+          <div id="mainselection">
+          <select name="City">
+            <option value="Berlin">Berlin</option>
+            <option value="Potsdam">Potsdam</option>
+            <option value="Brandenburg">Brandenburg</option>
+            </select>
+          </div>
+
+          My maximum Budget is...
+          <div>
+            <input type="text" name="Budget">
+            </input>
+          </div>
+
+        </h3>
+        <br>
+        <!--CONTIUE Button -->
       <a class="btn">Continue </a>
-  </div>
-      <p id="demo"</p>
-    <script> document.getElementById("demo").innerHTML = Date()</script>
+
+    </div>
 
 
-
+    <!--SECOND section -->
+    <div class="section second-container">
+      <h2>More Information</h2>
+      <p> more information to be added</p>
+      <p id="demo"></p>
+        <script>
+          document.getElementById("demo").innerHTML = Date()
+        </script>
     </div>
 
 

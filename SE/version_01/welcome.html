@@ -11,56 +11,51 @@
     <!--header for logo -->
     <header class="v-header">
       <h1>Flat Mate </h1>
-
     </header>
 
-      <!--first section -->
-      <div class="section container first-content">
+    <!--FIRST section -->
+    <div class="section container first-content">
        <h1>Welcome to Flat Mate <i class="fa fa-cloud"> </i></h1>
        <p>Let's make Flat share great again.<br> The easiest way to find your perfect flat mate. <br> To find out more please klick the "Get Started" button</p><br>
        <a class="btn">Get Started</a>
-      </div>
+    </div>
 
-
+    <!--SECOND section -->
     <div class="section second-container second-content">
       <h1>Gallery</h1>
       <p>more picture to be added</p>
       <div class="gallery-wrap">
         <div class="item item-1"></div>
-          <div class="item item-2"></div>
-
+        <div class="item item-2"></div>
       </div>
-      <div class="section container">
-        <!-- begin google maps-->
+    </div>
 
-              <div id="googleMap" style="width:110%;height:500px;align-items:center"></div>
-              <script>
-              function myMap() {
-              var mapBerlin= {
-                  center:new google.maps.LatLng(52.520008, 13.404954),
-                  zoom:15,
+    <!-- THIRD section-->
+    <div class="section container">
+      <!-- begin google maps-->
+      <div id="googleMap" style="width:110%;height:500px;align-items:center"></div>
+        <script>
+          function myMap() {
+          var mapBerlin= {
+              center:new google.maps.LatLng(52.520008, 13.404954),
+              zoom:15,
               };
-              var map=new google.maps.Map(document.getElementById("googleMap"),mapBerlin);
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapBerlin);
               }
-              </script>
-              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZUy6utlXT7HPy95JADYh0k8Yo6Kk9uxI&callback=myMap"></script>
-              </div>
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZUy6utlXT7HPy95JADYh0k8Yo6Kk9uxI&callback=myMap"></script>
+    </div>
+    <!-- ende google maps -->
 
-            </div>
-        <!-- ende google maps -->
-      </div>
-
-
-
-      <div class="section second-container">
-        <h2>More Information</h2>
-        <p> more information to be added</p>
-
-          <p id="demo"</p>
-        <script> document.getElementById("demo").innerHTML = Date()</script>
-
-
-      </div>
+    <!-- FORTH section using the same as second -->
+    <div class="section second-container">
+      <h2>More Information</h2>
+      <p> more information to be added</p>
+      <p id="demo"></p>
+        <script>
+          document.getElementById("demo").innerHTML = Date()
+        </script>
+    </div>
 
 
   </body>
