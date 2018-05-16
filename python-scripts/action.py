@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/Users/mieter/miniconda3/bin/python
 
 import cgi
 #from Algorithm import myAlg
