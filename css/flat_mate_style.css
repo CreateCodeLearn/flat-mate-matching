@@ -5,11 +5,12 @@
 /*ALLGEMEINE*/
 body{
   margin:0;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
   font-weight:normal;
   line-height:1,5;
-  background:#fefefe /*light cyan*/
+  background-color: #377480
+
 }
 
 .v-header{
@@ -33,7 +34,7 @@ body{
   padding-left:1rem;
   padding-right:1rem;
   text-align:center;
-  background-color:#fefefe /*light cyan*/
+  background-color:#377480 /*light cyan*/
 }
 
 .second-container{
@@ -41,7 +42,7 @@ body{
   padding-right:1rem;
   margin:auto;
   text-align:center;
-  background-color:#629894; /*Mostly desaturated dark cyan.*/
+  background-color:#377480; /*Mostly desaturated dark cyan.*/
   padding-bottom:2rem;
 }
 .container-left{
@@ -51,7 +52,7 @@ body{
   padding-right:1rem;
   margin:auto;
   text-align:padding-left;
-  background-color:#fefefe /*light cyan*/
+  background-color:#377480
 }
 
 /*CONTENT*/
@@ -59,13 +60,13 @@ body{
 .first-content h1{
   font-size:3rem;
   margin-bottom:0;
-  color:#091821;
+  color:#EAE5C7;
 }
 
 .first-content p{
   font-size:2rem;
   display:block;
-  color:#091821;
+  color:#EAE5C7;
   padding-bottom:2rem;
 }
 
@@ -73,32 +74,32 @@ body{
   display:block;
   font-size:2rem;
   margin-bottom:0;
-  color:#fff;
+  color:#EAE5C7;
 }
 .second-content p{
   font-size:1,5rem;
   display:block;
-  color:#fff;
+  color:#EAE5C7;
   padding-bottom:2rem;
 }
 
 .content-a h1{
   font-size:2rem;
   margin-bottom:0;
-  color:#091821;
+  color:#EAE5C7;
 }
 
 .content-a p{
   font-size:1rem;
   margin-bottom:0;
-  color:#091821;
+  color:#EAE5C7;
 }
 
 /*BUTTON*/
 
 .btn{
   background:#091821; /*Dark blue*/
-  color:#ffff;
+  color:#EAE5C7;
   border-color: #EAE5C7;
   font-size:1.2rem;
   padding: 1rem 2rem;
