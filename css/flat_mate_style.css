@@ -19,16 +19,16 @@ body{
   display:flex;
   align-items:center;
   background-color:#377480 /*Dark moderate cyan.*/
-  /*  text-shadow: 0 0 3px #091821, 0 0 5px #EAE5C7; color: #daecef;*/
+  /*  text-shadow: 0 0 3px #091821, 0 0 5px #F8F6EC; color: #daecef;*/
 }
 
 .v-footer{
-  position: relative;
-  padding-top: 1rem;
-  left:0;bottom: 0;
-  font-size:1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: #091821;
-  color: white;
+  color: #F8F6EC;
   text-align: center;
   }
 
@@ -42,27 +42,18 @@ body{
   padding-left:1rem;
   padding-right:1rem;
   text-align:center;
-  background-color:#377480 /*Dark moderate cyan.*/
+  background-color:#377480; /*Dark moderate cyan.*/
   padding-bottom:2rem;
 }
 
-.second-container{
-  height:auto;
-  padding-left:1rem;
-  padding-right:1rem;
-  margin:auto;
-  text-align:center;
-  background-color:#377480; /*Mostly desaturated dark cyan.*/
-  padding-bottom:2rem;
-}
 
 .container-left{
   height:auto;/*was 90vh*/
   max-width: 1000px;
-  padding-left:1rem;
-  padding-right:1rem;
+  padding-left:10rem;
+  padding-right:10rem;
   margin:auto;
-  text-align:padding-left;
+  text-align:left;
   background-color:#377480
 }
 
@@ -70,119 +61,86 @@ body{
 
 .first-content h1{
   font-size:4rem;
-  margin-bottom:0;
-  color:#EAE5C7;
+  color:#F8F6EC;
 }
-
 
 .first-content h2{
   font-size:3rem;
-  margin-bottom:0;
-  color:#EAE5C7;
+  color:#F8F6EC;
 }
-
 
 .first-content p{
   font-size:2rem;
-  display:block;
-  color:#EAE5C7;
+  color:#F8F6EC;
   padding-bottom:2rem;
 }
 
-.second-content h1{
+
+.form-content h1{
+  font-size:3rem;
+  margin-bottom: 10px;
+  margin-top: 40px;
   display:block;
-  font-size:2rem;
-  margin-bottom:0;
-  color:#EAE5C7;
-}
-.second-content p{
-  font-size:1,5rem;
-  display:block;
-  color:#EAE5C7;
-  padding-bottom:2rem;
+  color:#F8F6EC;
+  font-weight: bold;
+  padding: 2px 10px;
 }
 
-.content-a h1{
-  font-size:2rem;
-  margin-bottom:0;
-  color:#EAE5C7;
+.form-content h2{
+  font-size:2.3rem;
+  margin-bottom: 5px;
+  display:block;
+  color:#F8F6EC;
+  padding-top: 0,5rem;
+  padding-left: 2rem;
 }
 
-.content-a p{
-  font-size:1rem;
-  margin-bottom:0;
-  color:#EAE5C7;
-}
 
 /*BUTTON*/
 
-
 .btn-home{
   background:#091821; /*Dark blue*/
-  color:#EAE5C7;
-  border-color: #EAE5C7;
-  font-size:3rem;
+  color:#F8F6EC;
+  border-color: #F8F6EC;
+  font-size:3.5rem;
   padding: 1rem 2rem;
   text-decoration: none;
 }
-.btn{
+
+.btn-send{
   background:#091821; /*Dark blue*/
-  color:#EAE5C7;
-  border-color: #EAE5C7;
-  font-size:1.2rem;
-  padding: 1rem 2rem;
+  color:#F8F6EC;
+  border-color: #F8F6EC;
+  font-size:3.5rem;
+  padding:1rem 2rem;
+  margin-top: 50px;
   text-decoration: none;
-}
-
-/*Gallery Overview*/
-.gallery-wrap {
-  height: 40vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.item {
-  flex: 1;
-  height: 80%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  transition: flex 0.8s ease;
-  &:hover{flex: 2;}
-}
-
-.item-1 {
-  background-image: url('file:///C:/Users/Admin/Documents/flat-mate-matching/item1.jpg');
-}
-
-.item-2 {
-  background-image: url('file:///C:/Users/Admin/Documents/flat-mate-matching/item2.jpg');
 }
 
 
 /* -------------------- Select Box Styles*/
 #mainselection select {
    border: 0;
-   color: #ffff;
-   background: #629894 ;
+   color: #F8F6EC;
+   background: #87B3A9;
    font-size:1.5rem;
    font-weight: bold;
-   padding: 2px 10px;
+   padding: 3px 10px;
    width: 650px;
    *width: 650px;
-   *background:#629894 /*Mostly desaturated dark cyan.*/;
+   *background:#87B3A9 /*Mostly desaturated dark cyan.*/;
    -webkit-appearance: none;
 }
 #mainselection {
    overflow:hidden;
    font-size:2rem;
    width:650px;
+   color: #F8F6EC;
    -moz-border-radius: 9px 9px 9px 9px;
    -webkit-border-radius: 9px 9px 9px 9px;
    border-radius: 9px 9px 9px 9px;
-   box-shadow: 1px 1px 11px #330033;
-   background: #629894   url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 620px center;
+   box-shadow: 1px 1px 11px #091821;
+   background: #87B3A9   url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 620px center;
 }
 
 /* -------------------- Select Slider */
