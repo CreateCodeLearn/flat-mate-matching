@@ -153,11 +153,11 @@ body{
 }
 
 .item-1 {
-  background-image: url('file:///C:/Users/Admin/Documents/flat-mate-matching-master/item1.jpg');
+  background-image: url('file:///C:/Users/Admin/Documents/flat-mate-matching/item1.jpg');
 }
 
 .item-2 {
-  background-image: url('file:///C:/Users/Admin/Documents/flat-mate-matching-master/item2.jpg');
+  background-image: url('file:///C:/Users/Admin/Documents/flat-mate-matching/item2.jpg');
 }
 
 
@@ -166,16 +166,17 @@ body{
    border: 0;
    color: #ffff;
    background: #629894 ;
-   font-size: 20px;
+   font-size:1.5rem;
    font-weight: bold;
    padding: 2px 10px;
-   width: 600px;
-   *width: 600px;
+   width: 650px;
+   *width: 650px;
    *background:#629894 /*Mostly desaturated dark cyan.*/;
    -webkit-appearance: none;
 }
 #mainselection {
    overflow:hidden;
+   font-size:2rem;
    width:650px;
    -moz-border-radius: 9px 9px 9px 9px;
    -webkit-border-radius: 9px 9px 9px 9px;
