@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="css/flat_mate_style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="script" href="flat_mate_js.js">
+      <style> div{margin: 30px;} </style>
+</head>
+
+<body>
+  <!--header for logo -->
+  <header class="v-header">
+    <h1> <img src="Flatshare-logo.png" width="20%" height="20%" alt="logo"</h1>
+  </header>
+
+    <!--FIRST section -->
+    <div class="section container-left content-a">
+      <h1> first part </i></h1>
+        <h3>
+          I am...
+          <!--Beginn des Formulars -->
+          <form action="python-scripts/action.py" method="post">
+          <div id="mainselection">
+          <select name="Gender">
+            <option value="null">Please select a gender..</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="neutral">Neutral</option>
+          </select>
+          </div>
+
+          My age...
+            <!--<select name="Age">
+            <option value="0">Please select age range..</option>
+            <option value="1">20-30</option>
+            <option value="2">30-40</option>
+            <option value="3">40-50</option>
+          </select>-->
+          <div class="""slidecontainer" align="left">
+            <input type="range" min="0" max="100" value="25" class="slider" id="myAge">
+            <p>Age: <span id="demoAge"></span></p>
+          </div>
+
+          <script>
+          var slider = document.getElementById("myAge");
+          var output = document.getElementById("demoAge");
+          output.innerHTML = slider.value;
+
+          slider.oninput = function() {
+            output.innerHTML = this.value;
+          }
+          </script>
+
+
+
+          I am looking for...
+          <div id="mainselection">
+          <select name="Category">
+            <option value="Nachmieter">A place to live</option>
+            <option value="Vermieter">A roomate to share my place</option>
+            </select>
+          </div>
+
+          In...
+          <div id="mainselection">
+          <select name="Area">
+            <option value="null">Please select an Area</option>
+            <option value="Charlottenburg-Wilmersdorf">Charlottenburg-Wilmersdorf</option>
+            <option value="Friedrichshain-Kreuzberg">Friedrichshain-Kreuzberg</option>
+            <option value="Lichtenberg Hohenschönhausen">Lichtenberg Hohenschönhausen</option>
+            <option value="Marzahn-Hellersdorf">Marzahn-Hellersdorf</option>
+            <option value="Bezirk Mitte">Bezirk Mitte</option>
+            <option value="Neukölln">Neukölln</option>
+            <option value="Pankow">Pankow</option>
+            <option value="Reinickendorf">Reinickendorf</option>
+            <option value="Spandau">Spandau</option>
+            <option value="Steglitz-Zehlendorf">Steglitz-Zehlendorf</option>
+            <option value="Tempelhof-Schöneberg">Tempelhof-Schöneberg</option>
+            <option value="Treptow-Köpenick">Treptow-Köpenick</option>
+          </select>
+          </div>
+
+          My maximum Budget is...
+                    <!--  <input type="text" name="Budget"></input>-->
+
+            <div class="""slidecontainer" align="left">
+              <input type="range" min="0" max="3000" value="500" class="slider" id="myRange">
+              <p>Max Budget: <span id="demoRange"></span></p>
+            </div>
+
+            <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demoRange");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+            </script>
+
+        </h3>
+        <br>
+          <!--<a href="#" class="btn">Continue </a>-->
+        <input class="btn" type="submit" value="Send">
+
+        <!--Previous Button -->
+        <a href="index.html" class="btn">Back to Homepage</a>
+
+
+      </form>
+      <!--Ende des Formulars -->
+  </div>
+
+<div class="section container">
+
+</div>
+
+<!-- FOOTER-->
+    <div class="v-footer">
+      <p>2018 Flat Share Inc.</p>
+      <p id="demo"></p>
+        <script>
+          document.getElementById("demo").innerHTML = Date()
+        </script>
+    </div>
+
+
+
+</body>
+
+</html>

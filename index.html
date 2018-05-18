@@ -1,0 +1,66 @@
+  <!DOCTYPE html>
+  <html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="css/flat_mate_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!--header for logo -->
+    <header class="v-header" align="center">
+      <h1> <img src="Flatshare-logo.png" width="40%" height="40%" alt="logo"></h1>
+    </header>
+
+    <!--FIRST section -->
+    <div class="section container first-content">
+       <h1>Welcome!<i class="fa fa-cloud"> </i></h1>
+       <h2><br> The easiest way to find your perfect flat mate.</h2>
+       <img src= "P1_img.png" width="30%" height="30%">
+       <br>
+       <a href="first_page.html" class="btn-home">Get Started</a>
+<br>
+       <!-- GOOGLE MAPS-->
+       <!--               begin google maps-->
+       <h1>Search your room</h1> <br>
+       <div id="googleMap" style="width:100%;height:450px;align-items:center"></div>
+         <script>
+           function myMap() {
+           var mapBerlin= {
+               center:new google.maps.LatLng(52.520008, 13.404954),
+               zoom:15,
+               };
+           var map=new google.maps.Map(document.getElementById("googleMap"),mapBerlin);
+               }
+         </script>
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZUy6utlXT7HPy95JADYh0k8Yo6Kk9uxI&callback=myMap"></script>
+         <!--             ende google maps -->
+    </div>
+
+
+    <!--SECOND section -->
+    <div class="section container second-content">
+      <h1>Gallery</h1>
+      <p>more picture to be added</p>
+      <div class="gallery-wrap">
+        <div class="item item-1"</div>
+        <div class="item item-2"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER-->
+    <div class="v-footer">
+      <p>2018 Flat Share Inc.</p>
+      <p id="demo"></p>
+        <script>
+          document.getElementById("demo").innerHTML = Date()
+        </script>
+
+    </div>
+
+
+  </body>
+
+  </html>

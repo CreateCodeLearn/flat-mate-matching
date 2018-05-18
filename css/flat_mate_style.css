@@ -1,0 +1,226 @@
+*{
+  box-sizing: border-box;
+}
+
+/*ALLGEMEINE*/
+body{
+  margin:0;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight:normal;
+  line-height:1,5;
+  background-color: #377480
+
+}
+
+.v-header{
+  height:10vh;
+  padding-top: 1rem;
+  display:flex;
+  align-items:center;
+  background-color:#377480 /*Dark moderate cyan.*/
+  /*  text-shadow: 0 0 3px #091821, 0 0 5px #EAE5C7; color: #daecef;*/
+}
+
+.v-footer{
+  position: relative;
+  padding-top: 1rem;
+  left:0;bottom: 0;
+  font-size:1rem;
+  background-color: #091821;
+  color: white;
+  text-align: center;
+  }
+
+.section{ /*combining every section*/
+  padding:20px 0;
+  padding-bottom:2rem;
+}
+
+.container{
+  height:auto;
+  padding-left:1rem;
+  padding-right:1rem;
+  text-align:center;
+  background-color:#377480 /*Dark moderate cyan.*/
+  padding-bottom:2rem;
+}
+
+.second-container{
+  height:auto;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+  background-color:#377480; /*Mostly desaturated dark cyan.*/
+  padding-bottom:2rem;
+}
+
+.container-left{
+  height:auto;/*was 90vh*/
+  max-width: 1000px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:padding-left;
+  background-color:#377480
+}
+
+/*CONTENT*/
+
+.first-content h1{
+  font-size:4rem;
+  margin-bottom:0;
+  color:#EAE5C7;
+}
+
+
+.first-content h2{
+  font-size:3rem;
+  margin-bottom:0;
+  color:#EAE5C7;
+}
+
+
+.first-content p{
+  font-size:2rem;
+  display:block;
+  color:#EAE5C7;
+  padding-bottom:2rem;
+}
+
+.second-content h1{
+  display:block;
+  font-size:2rem;
+  margin-bottom:0;
+  color:#EAE5C7;
+}
+.second-content p{
+  font-size:1,5rem;
+  display:block;
+  color:#EAE5C7;
+  padding-bottom:2rem;
+}
+
+.content-a h1{
+  font-size:2rem;
+  margin-bottom:0;
+  color:#EAE5C7;
+}
+
+.content-a p{
+  font-size:1rem;
+  margin-bottom:0;
+  color:#EAE5C7;
+}
+
+/*BUTTON*/
+
+
+.btn-home{
+  background:#091821; /*Dark blue*/
+  color:#EAE5C7;
+  border-color: #EAE5C7;
+  font-size:3rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+.btn{
+  background:#091821; /*Dark blue*/
+  color:#EAE5C7;
+  border-color: #EAE5C7;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+/*Gallery Overview*/
+.gallery-wrap {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  &:hover{flex: 2;}
+}
+
+.item-1 {
+  background-image: url('file:///C:/Users/Admin/Documents/flat-mate-matching-master/item1.jpg');
+}
+
+.item-2 {
+  background-image: url('file:///C:/Users/Admin/Documents/flat-mate-matching-master/item2.jpg');
+}
+
+
+/* -------------------- Select Box Styles*/
+#mainselection select {
+   border: 0;
+   color: #ffff;
+   background: #629894 ;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 600px;
+   *width: 600px;
+   *background:#629894 /*Mostly desaturated dark cyan.*/;
+   -webkit-appearance: none;
+}
+#mainselection {
+   overflow:hidden;
+   width:650px;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 9px 9px 9px 9px;
+   box-shadow: 1px 1px 11px #330033;
+   background: #629894   url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 620px center;
+}
+
+/* -------------------- Select Slider */
+
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 15px;
+    border-radius: 5px;
+    background: #091821;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #88b3a9;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #639893;
+    cursor: pointer;
+}
