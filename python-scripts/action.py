@@ -1,4 +1,4 @@
-#!/Users/mieter/miniconda3/bin/python
+#!/usr/bin/env python
 
 import cgi
 #from Algorithm import myAlg
@@ -10,9 +10,9 @@ form = cgi.FieldStorage()
 #get an input filed from the form callled 'name'
 #and assign it's value to a local variable called v_name
 v_name = form.getvalue('Gender')
-v_age = int(form.getvalue('Age'))
+v_age = int(form.getvalue('myAge'))
 v_area = form.getvalue('Area')
-v_budget = form.getvalue('demoRange')
+v_budget = int(form.getvalue('myRange'))
 
 
 #send an html response.

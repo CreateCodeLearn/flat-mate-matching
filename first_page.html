@@ -39,8 +39,8 @@
             <option value="2">30-40</option>
             <option value="3">40-50</option>
           </select>-->
-          <div class="""slidecontainer" align="left">
-            <input type="range" min="0" max="100" value="25" class="slider" id="myAge">
+          <div class="slidecontainer" align="left">
+            <input type="range" min="0" max="100" value="25" class="slider" id="myAge" name="myAge">
             <p>Age: <span id="demoAge"></span></p>
           </div>
 
@@ -86,18 +86,18 @@
           My maximum Budget is...
                     <!--  <input type="text" name="Budget"></input>-->
 
-            <div class="""slidecontainer" align="left">
-              <input type="range" min="0" max="3000" value="500" class="slider" id="myRange">
+            <div class="slidecontainer" align="left">
+              <input type="range" min="0" max="3000" value="500" class="slider" id="myRange" name="myRange">
               <p>Max Budget: <span id="demoRange"></span></p>
             </div>
 
             <script>
-            var slider = document.getElementById("myRange");
-            var output = document.getElementById("demoRange");
-            output.innerHTML = slider.value;
+            var slider2 = document.getElementById("myRange");
+            var output2 = document.getElementById("demoRange");
+            output2.innerHTML = slider.value;
 
-            slider.oninput = function() {
-              output.innerHTML = this.value;
+            slider2.oninput = function() {
+              output2.innerHTML = this.value;
             }
             </script>
 
