@@ -1,28 +1,55 @@
-#!/Users/mieter/miniconda3/bin/python
+#!/usr/bin/env python
 
 import cgi
 #from Algorithm import myAlg
 
+
 #get the output of the form.
 form = cgi.FieldStorage()
 
+import pickle
+#import pickle to be able to read the binariy file
+data = pickle.load(open("./python-scripts/fake_dict_data.p","rb"))
+#get output from the file and name it as "data"
 
 #get an input filed from the form callled 'name'
 #and assign it's value to a local variable called v_name
-v_name = form.getvalue('Gender')
-v_age = int(form.getvalue('Age'))
-v_city = form.getvalue('City')
+v_gender = form.getvalue('Gender')
+v_area = form.getvalue('Area')
+v_age = form.getvalue('myAge')
+v_budget = form.getvalue('myBudget')
 
+
+#extracting data from the tuple
+flatsupplier = data[0]
+
+flatorder = data[1]
+
+print (flatorder)
+
+print (flatorder[0])
+#best fit, as the 1st position on flatorder
+
+bestfit = flatsupplier.get(flatorder[0])
+#extract from dict file the key for flatorder 0
+print (bestfit)
+
+Location = bestfit.get("Location")
+print (Location)
 
 #send an html response.
 print ("""
 <html>
 <body>
-<p>
-Thanks, %s
-age: %s
-city: %s
-</p>
+<h1>
+Gender: %s <br>
+Area: %s <br>
+Age: %s <br>
+Budget: %s
+</h1>
 </body>
 </html>
-""" % (v_name, v_age, v_city) )
+""" % (v_gender,v_area,v_age,v_budget
+))
+#print the data
+#print (data)
