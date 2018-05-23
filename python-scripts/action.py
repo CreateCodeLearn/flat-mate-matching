@@ -9,7 +9,7 @@ form = cgi.FieldStorage()#
 
 import pickle
 #import pickle to be able to read the binariy file
-data = pickle.load(open("/data/fake_dict_data.p","rb"))
+data = pickle.load(open("data/fake_dict_data.p","rb"))
 #get output from the file and name it as "data"
 
 #C:\Users\Admin\Documents\flat-mate-matching\python-scripts>python action.py
@@ -22,6 +22,7 @@ v_area = form.getvalue('Area')
 v_age = form.getvalue('myAge')
 v_budget = form.getvalue('myBudget')
 
+
 import os
 print(os.getcwd())
 
@@ -31,30 +32,50 @@ flatsupplier = data[0]
 flatorder = data[1]
 
 print (flatorder)
+# output [3, 19, 11, 2, 18, 15, 8, 5]
 
 print (flatorder[0])
 #best fit, as the 1st position on flatorder
+#output 3
 
-bestfit = flatsupplier.get(flatorder[0])
-#extract from dict file the key for flatorder 0
-print (bestfit)
-
-Location = bestfit.get("Location")
-print (Location)
-
-#send an html response.
-print ("""
-<html>
-<body>
-<h1>
+BODY_TEXT="""
 Gender: %s <br>
 Area: %s <br>
 Age: %s <br>
-Budget: %s
+Budget: %s<br>
+""" %(v_gender,v_area,v_age,v_budget)
+
+items = []
+for item in flatorder:
+    items.append(flatsupplier.get(item))
+    Location = flatsupplier.get(item).get("Location")
+    Rent = flatsupplier.get(item).get("Rent")
+
+    BODY_TEXT += """
+Location: %s<br>
+""" %(Rent,Location)
+
+
+#extract from dict file the key for flatorder 0
+bestfit = flatsupplier.get(flatorder[0])
+print (bestfit)
+#output {'Location': 'Neukolln', 'Gender': 'Male', 'Rent': 300, 'lowerage': 21, 'upperage': 32}
+
+Location = bestfit.get("Location")
+print (Location)
+#output Neukolln
+
+
+
+OPENING= """
+<html>
+<body>
+<h1>
+"""
+CLOSING="""
 </h1>
 </body>
 </html>
-""" % (v_gender,v_area,v_age,v_budget
-))
-#print the data
-#print (data)
+"""
+
+print(OPENING+BODY_TEXT+CLOSING)
