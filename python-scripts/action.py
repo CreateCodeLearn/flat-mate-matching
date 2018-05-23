@@ -5,12 +5,15 @@ import cgi
 
 
 #get the output of the form.
-form = cgi.FieldStorage()
+form = cgi.FieldStorage()#
 
 import pickle
 #import pickle to be able to read the binariy file
-data = pickle.load(open("./python-scripts/fake_dict_data.p","rb"))
+data = pickle.load(open("/data/fake_dict_data.p","rb"))
 #get output from the file and name it as "data"
+
+#C:\Users\Admin\Documents\flat-mate-matching\python-scripts>python action.py
+#C:\Users\Admin\Documents\flat-mate-matching\python-scripts
 
 #get an input filed from the form callled 'name'
 #and assign it's value to a local variable called v_name
@@ -19,6 +22,8 @@ v_area = form.getvalue('Area')
 v_age = form.getvalue('myAge')
 v_budget = form.getvalue('myBudget')
 
+import os
+print(os.getcwd())
 
 #extracting data from the tuple
 flatsupplier = data[0]
